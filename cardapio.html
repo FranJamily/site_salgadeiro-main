@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	<link rel="stylesheet"  href="./style_cardapio.css" />
+    <title>Cardápio</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/iconcaju.ico">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Whisper:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Judson:wght@400&display=swap" />
+</head>
+
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      <style>
+        @media (max-width: 600px) and (min-height: 416px) {
+            div[vw] {
+                position: fixed;
+                /* Fixa o elemento na janela do navegador, independente do rolar da página */
+                width: 400px !important;
+                /* Define a largura fixa do elemento como 400px, ignorando outras regras de estilo */
+                min-height: 40px !important;
+                /* Define a altura mínima do elemento como 40px */
+                min-width: 40px !important;
+                /* Define a largura mínima do elemento como 40px */
+                right: 0;
+                /* Alinha o elemento na extremidade direita da janela */
+                top: 50%;
+                /* Posiciona o topo do elemento no meio da janela (50% da altura da janela) */
+                transform-origin: right center !important;
+                /* Define o ponto de origem da transformação no centro da lateral direita */
+                transform: translateY(-50%) scale(0.55) !important;
+                /* Centraliza verticalmente e aplica redução uniforme (80% do tamanho original) */
+                z-index: 2147483647 !important;
+                /* Garante que o elemento fique acima de todos os outros na página */
+                display: none;
+                /* Inicialmente oculta o elemento, para só aparecer quando ativado */
+                margin: 10px !important;
+                /* Define uma margem de 10px ao redor do elemento */
+            }
+        }
+    
+        @media (min-width: 601px) and (max-height: 431px) {
+            div[vw] {
+                position: fixed;
+                /* Fixa o elemento na janela do navegador, independente do rolar da página */
+                width: 400px !important;
+                /* Define a largura fixa do elemento como 400px, ignorando outras regras de estilo */
+                min-height: 40px !important;
+                /* Define a altura mínima do elemento como 40px */
+                min-width: 40px !important;
+                /* Define a largura mínima do elemento como 40px */
+                right: 0;
+                /* Alinha o elemento na extremidade direita da janela */
+                top: 50%;
+                /* Posiciona o topo do elemento no meio da janela (50% da altura da janela) */
+                transform-origin: right center !important;
+                /* Define o ponto de origem da transformação no centro da lateral direita */
+                transform: translateY(-50%) scale(0.45) !important;
+                /* Centraliza verticalmente e aplica redução uniforme (80% do tamanho original) */
+                z-index: 2147483647 !important;
+                /* Garante que o elemento fique acima de todos os outros na página */
+                display: none;
+                /* Inicialmente oculta o elemento, para só aparecer quando ativado */
+                margin: 10px !important;
+                /* Define uma margem de 10px ao redor do elemento */
+            }
+        }
+    </style>
+
+    <div class="container">
+    
+        <header>
+           
+            <div class="textos-header">
+                <h1>Cardápio em RA</h1>
+               
+            </div>
+            <a href="index.html"><button class="botao"><img src="Vector.png"></button></a>
+        </header>
+    
+        <!-- Seções do Cardápio -->
+        <div class="menu-section">
+    
+            <ul>
+                <li>
+                   <a href="https://mywebar.com/p/Project_0_fcyquoxq40"><img src="coxinha.jpg" alt="Coxinha de Frango"></a>
+                    <p>Coxinha de Frango</p>
+    
+                </li>
+                <li>
+                    <a href="https://mywebar.com/p/Project_1_bmbcwzctlg"><img src="esfirra.jpg" alt="Esfirra"></a>
+                    <p>Esfirra de Frango</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://mywebar.com/p/Project_2_g15z7znais"><img src="pastel.jpg" alt="Pastel"></a>
+                    <p>Pastel de Carne</p>
+                </li>
+            </ul>
+        </div>
+    
+</body>
+</html>
